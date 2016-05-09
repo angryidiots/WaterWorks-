@@ -1,0 +1,72 @@
+
+body{ 
+	margin: 0;
+	padding: 0;
+	background: #BBD9EE;
+	height:100%;
+}
+
+footer{
+	background:#333;
+	color:#fff;
+	height:40px;
+	text-align: center;
+	padding-top: 10px;
+	margin-top: 40px;
+	bottom:0px;
+}
+
+.form-orderNow {
+  max-width: 400px;
+  padding: 15px;
+  margin: 0 auto;
+}
+
+.form-orderNow .form-control {
+  position: relative;
+  height: auto;
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 10px;
+  font-size: 16px;
+}
+.form-orderNow .form-control:focus {
+  z-index: 2;
+}
+.form-orderNow input[type="email"] {
+  margin-bottom: -1px;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+.promo .phone .phone-holder {
+    margin: 0 auto;
+    width: auto;
+    -webkit-background-size: 300px auto;
+    -moz-background-size: 300px auto;
+    -o-background-size: 300px auto;
+    background-size: 300px auto;
+  }
+
+.promo .android {
+  position: relative;
+}
+.promo .android .android-holder {
+  position: relative;
+  width: 320px;
+  height: 600px;
+  background-repeat: no-repeat;
+  background-position: left top;
+}
+
+.promo .overview {
+  margin-top: 60px;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+.promo .overview h2 {
+  font-size: 30px;
+  margin-bottom: 35px;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.3);
+}
