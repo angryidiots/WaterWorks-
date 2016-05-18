@@ -11,4 +11,17 @@ Router.map(function(){
 		path:'/orderNow',
 		template:'orderNow'
 	});
+	this.route('features', {
+		path:'/features',
+		template:'features'
+	});
+	this.route('aboutus', {
+		path:'/aboutus',
+		template:'aboutus'
+	});
+	this.route('yourorders', {
+		path:'/yourorders',
+		template:'yourorders'
+	});
+	
 });

@@ -1,64 +1,15 @@
 <template name="orderNow">
-	<form class="form-orderNow">
-		<h3>Order Now</h3>
-		<div class="form-group">
-			<div class="form-group message">
-                <label class="sr-only" for="mobileNo">Mobile No</label>
-                <input id="mobileNo" name="mobileNo" class="form-control" placeholder="Mobile No">
+	<div class="container">
+        <div class="row">
+            <div class="phone android col-md-4 col-sm-12 col-xs-12">
+                <div class="android-holder phone-holder">
+                <img src="img/WW2_Home.jpg"  alt="water can supply" />
+                </div>
             </div>
-			<select class="form-control name" id="quantity" name="quantity">
-              <label for="quantity">quantity:</label>
-              <option value = "">Select quantity...</option>
-              <option value = "1">1</option>
-              <option value = "2">2</option>
-              <option value = "3">3</option>
-              <option value = "4">4</option>
-              <option value = "5">5</option>
-              <option value = "6">6</option>
-              <option value = "7">7</option>
-              <option value = "8">8</option>
-              <option value = "9">9</option>
-              <option value = "10">10 </option>
-            </select>
-            <div class="form-group email"> </div>
-            <select class="form-control name" id="locality" name="locality">
-               <label for="locality">locality:</label>
-               <option value = "">Select Locality..</option>
-               <option value = "Anjaiah Nagar">Kukatpally </option>
-               <option value = "Botanical Gardens">KPHB Colony</option>
-            </select>
-            <div class="form-group email"> </div>
-            <div class="form-group message">
-                <label class="sr-only" for="address">Address</label>
-                <input id="address" name="address" class="form-control" placeholder="Enter your  Flat number, Apartment name:">
-            </div>
-
-             <select class="form-control name" id="deliveryDay" name="deliveryDay">
-             <label for="deliveryDay">day:</label>
-              <option value = "">Select Delivery day...</option>
-              <option value = "monday">Everyday</option>
-              <option value = "monday">Alternate Days</option>
-              <option value = "monday">Monday</option>
-              <option value = "tuesday">Tuesday</option>
-              <option value = "wednesday">Wednesday</option>
-              <option value = "thursday">Thursday</option>
-              <option value = "friday">Friday</option>
-              <option value = "saturday">Saturday</option>
-              <option value = "sunday">Sunday</option>
-            </select>
-            <div class="form-group email"> </div>
-            <select class="form-control name" id="deliveryTime" name="deliveryTime">
-            <label for="deliveryTime">time:</label>
-             <option value = "">Select Delivery time...</option>
-              <option value = "7-8 AM">07:00-08:00 AM</option>
-              <option value = "8-9 AM">08:00-09:00 AM</option>
-              <option value = "9-10 AM">09:00-10:00 AM</option>
-              <option value = "9-10 AM">10:00-11:00 AM</option>
-            </select>
-        </div>
-        <div>
-        	<input type="submit" name="submit" class="btn btn-danger" value="Order Now">
-        	<a href="{{pathFor 'home'}}" class="btn btn-default">Close</a>
-        </div>
-	</form>
+	        <div class="phone android col-md-8 col-sm-12 col-xs-12">
+	        	<h3>Order Now</h3>
+				{{> quickForm collection="Orders" class="form-orderNow" id="form-orderNow" type="insert" label-class="sr-only" afFieldInput-placeholder="schemaLabel"}}
+			</div>
+		</div>
+    </div>
 </template>
